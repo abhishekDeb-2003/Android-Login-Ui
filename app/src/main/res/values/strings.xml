@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Android Login UI</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account&#63; Sign Up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="enter_username_e_g_email_id">Enter username&#40;e&#46;g email id&#41;</string>
+</resources>
