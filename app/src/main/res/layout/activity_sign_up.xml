@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/bg3"
     tools:context=".SignUp">
 
@@ -26,60 +27,80 @@
             android:textSize="27sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/username_edt"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:background="@drawable/edt_border"
+            android:layout_height="wrap_content"
             android:hint="@string/enter_username_e_g_email_id"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:paddingStart="10dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textColorHint="@color/transparent_white"
-            tools:ignore="RtlSymmetry" />
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white">
 
-        <EditText
-            android:id="@+id/password_edt"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_edt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_edt_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edt_border"
+            android:layout_height="wrap_content"
             android:hint="@string/enter_password"
-            android:importantForAutofill="no"
-            android:inputType="textPassword"
-            android:paddingStart="10dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textColorHint="@color/transparent_white"
-            tools:ignore="RtlSymmetry" />
+            android:layout_marginTop="16dp"
+            app:errorEnabled="true"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white">
 
-        <EditText
-            android:id="@+id/confirm_password_edt"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_edt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_password_edt_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edt_border"
+            android:layout_height="wrap_content"
             android:hint="@string/confirm_password"
-            android:importantForAutofill="no"
-            android:inputType="textPassword"
-            android:paddingStart="10dp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textColorHint="@color/transparent_white"
-            tools:ignore="RtlSymmetry" />
+            android:layout_marginTop="16dp"
+            app:errorEnabled="true"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password_edt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/login_btn"
+            android:id="@+id/signUp_btn"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/btn_bg"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
             android:text="@string/sign_up"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
